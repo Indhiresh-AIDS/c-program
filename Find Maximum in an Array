@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int arr[5], max, i;
+    printf("Enter 5 integers: ");
+    for(i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]); // Store input in array
+    }
+
+    max = arr[0]; // Assume first element is max
+    for(i = 1; i < 5; i++) {
+        if(arr[i] > max) {
+            max = arr[i]; // Update max if a larger value is found
+        }
+    }
+    printf("Maximum value: %d\n", max);
+    return 0;
+}
