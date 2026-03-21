@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int number;
+    do {
+        printf("Enter a positive number: ");
+        scanf("%d", &number);
+    } while (number <= 0); // Condition is checked AFTER the first run
+    printf("You entered: %d\\n", number);
+    return 0;
+}
+// If the user enters -5, it prints the prompt again. 
+// If the user then enters 10, the loop stops.
