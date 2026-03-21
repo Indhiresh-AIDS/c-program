@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int i, n, factorial = 1;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    // Loop from 1 to n to calculate the factorial
+    for (i = 1; i <= n; ++i) {
+        factorial *= i; // Multiplies factorial by i in each iteration
+    }
+
+    printf("Factorial of %d = %d\n", n, factorial);
+
+    return 0;
+}
